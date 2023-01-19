@@ -1,0 +1,163 @@
+# Declara dos arrays:
+# * uno de motos con cuatro motos
+# * uno de coches con cuatro coches
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+
+$motos = array("Yamaha", "Honda", "Kawasaki", "Ducati");
+$coches = array("Renault", "Opel", "Seat", "Audi");
+?> 
+
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------------------
+
+# Recorre uno de los arrays mostrando sus elementos
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+
+$motos = array("Yamaha", "Honda", "Kawasaki", "Ducati");
+$coches = array("Renault", "Opel", "Seat", "Audi");
+
+for ($x = 0; $x < count($coches); $x++) {
+    echo $coches[$x] . "<br>";
+}
+?> 
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------
+
+# Ordena y muestra sus elementos
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$motos = array("Yamaha", "Honda", "Kawasaki", "Ducati");
+sort($motos);
+foreach ($motos as $moto) {
+    echo $moto . "<br>";
+}
+
+echo "<br>";
+
+$coches = array("Renault", "Opel", "Seat", "Audi");
+sort($coches);
+foreach ($coches as $coche) {
+    echo $coche . "<br>";
+}
+?> 
+
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------------
+
+# Haz que lo indicado en a y b se realice mediante una llamada a la funcion mostrarResultadosOrdenados
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+function mostrarResultadosOrdenados($array) {
+    sort($array);
+    foreach ($array as $elemento) {
+        echo $elemento . "<br>";
+    }
+}
+$motos = array("Yamaha", "Honda", "Kawasaki", "Ducati");
+
+mostrarResultadosOrdenados($motos);
+echo "<br>";
+$coches = array("Renault", "Opel", "Seat", "Audi");
+
+mostrarResultadosOrdenados($coches);
+?> 
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------
+
+# Indica por pantalla cuantos elementos hay
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+function mostrarResultadosOrdenados($array) {
+    sort($array);
+    $contador = 0;
+    foreach ($array as $elemento) {
+        echo $elemento . "<br>";
+        $contador++;
+    }
+    
+     echo "Total de resultados: " . $contador . "<br>";
+}
+
+$motos = array("Yamaha", "Honda", "Kawasaki", "Ducati");
+
+mostrarResultadosOrdenados($motos);
+echo "<br>";
+$coches = array("Renault", "Opel", "Seat", "Audi");
+
+mostrarResultadosOrdenados($coches);
+echo "<br>";
+?> 
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------------------------------------------
+
+# Busca si un elemento se encuentro e informa de ello
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+function mostrarResultadosOrdenados($array, $buscar) {
+    sort($array);
+    $contador = 0;
+    foreach ($array as $elemento) {
+        echo $elemento . "<br>";
+        $contador++;
+    }
+    
+     echo "Total de resultados: " . $contador . "<br>";
+     
+     if (in_array($buscar, $array)) {
+        echo "El elemento buscado '" . $buscar . "' se encuentra en el array. <br>";
+    } else {
+        echo "El elemento buscado '" . $buscar . "' no se encuentra en el array. <br>";
+    }
+}
+
+$motos = array("Yamaha", "Honda", "Kawasaki", "Ducati");
+
+mostrarResultadosOrdenados($motos, "Ducati");
+echo "<br>";
+$coches = array("Renault", "Opel", "Seat", "Audi");
+
+mostrarResultadosOrdenados($coches, "Prueba");
+echo "<br>";
+?> 
+
+</body>
+</html>
