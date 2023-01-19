@@ -1,3 +1,27 @@
 # Calcula la calificación en palabras de la nota de un examen almacenada en una variable (5 y 6 aprobado, 7 y 8 notable, 9 y 10 sobresaliente)
 # mediante una estructura switch
 
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$calificacion = 6;
+
+switch ($calificacion) {
+    case $calificacion >= 5 && $calificacion <= 6:
+        echo "Aprobado";
+        break;
+    case $calificacion >= 7 && $calificacion <= 8:
+        echo "Notable";
+        break;
+    case $calificacion >= 9 && $calificacion <= 10:
+        echo "Sobresaliente";
+        break;
+    default:
+        echo "Calificación no válida";
+}
+?> 
+
+</body>
+</html>
