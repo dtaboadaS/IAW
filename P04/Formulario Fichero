@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>PHP Formulario</h1>
+<form action="form_action.php" method="post">
+  Nombre: <input type="text" name="name"><br><br>
+  E-mail: <input type="email" name="email"><br><br>
+  Web: <input type="url" name="website"><br><br>
+  Comentario: <textarea name="comment" rows="5" cols="40"></textarea><br><br>
+  G&eacutenero: 
+  <input type="radio" name="gender" value="hombre"> Hombre
+  <input type="radio" name="gender" value="mujer"> Mujer
+  <input type="radio" name="gender" value="otro"> Otro<br><br>
+  <input type="file" id="file" name="file"><br><br>
+  <input type="submit" value="Enviar">
+</form> 
+
+</body>
+</html>
