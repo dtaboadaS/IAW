@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<?php
+if (isset($_POST['submit'])) {
+    $nombre = $_POST['name'];
+    $correo = $_POST['email'];
+    $web = $_POST['website'];
+    $comentario = $_POST['comment'];
+    $genero = $_POST['gender'];
+    echo "Nombre: ".$nombre."<br>";
+    echo "E-mail: ".$correo."<br>";
+    echo "Web: ".$web."<br>";
+    echo "Comentario: ".$comentario."<br>";
+    echo "Género: ".$genero."<br>";
+}
+?>
