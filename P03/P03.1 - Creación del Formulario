@@ -9,7 +9,7 @@
   E-mail: <input type="email" name="email"><br><br>
   Web: <input type="url" name="website"><br><br>
   Comentario: <textarea name="comment" rows="5" cols="40"></textarea><br><br>
-  Género: 
+  G&eacutenero: 
   <input type="radio" name="gender" value="hombre"> Hombre
   <input type="radio" name="gender" value="mujer"> Mujer
   <input type="radio" name="gender" value="otro"> Otro<br><br>
