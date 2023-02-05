@@ -1,0 +1,23 @@
+<?php
+
+function escribirEspacios($numeroEspacios) {
+    $cad1 = " ";
+    for ($y = 10; $y > $numeroEspacios; $y--) {
+        echo "$cad1";
+    }
+}
+
+$cad2="*";
+
+for ($x = 0; $x <= 10; $x++){
+    escribirEspacios($x);
+    echo "$cad2 <br>";
+    $cad2=$cad2. "**";
+}
+
+for ($x = 0; $x <= 6; $x++){
+    escribirEspacios(2);
+    echo "*****<br>";
+}
+
+?>
