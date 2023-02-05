@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$nota = array("Daniel"=>"10", "Alejandro"=>"5", "Gabriel"=>"0");
+$nota["María"] = "8";
+
+arsort($nota);
+
+foreach($nota as $x => $x_value) {
+    echo $x . " tiene un " . $x_value;
+    echo "<br>";
+}
+?>
+
+</body>
+</html>
