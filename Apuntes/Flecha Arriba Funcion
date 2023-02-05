@@ -1,3 +1,4 @@
+<pre>
 <?php
 
 function escribirEspacios($numeroEspacios) {
@@ -21,3 +22,4 @@ for ($x = 0; $x <= 6; $x++){
 }
 
 ?>
+</pre>
