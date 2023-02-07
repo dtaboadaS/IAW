@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <?php
-if (isset($_POST['submit'])) {
     $nombre = $_POST['name'];
     $correo = $_POST['email'];
     $web = $_POST['website'];
@@ -11,5 +10,4 @@ if (isset($_POST['submit'])) {
     echo "Web: ".$web."<br>";
     echo "Comentario: ".$comentario."<br>";
     echo "Género: ".$genero."<br>";
-}
 ?>
