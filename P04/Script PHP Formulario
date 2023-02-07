@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
     $ruta_temporal = $archivo['tmp_name'];
     $error = $archivo['error'];
     $tamaño = $archivo['size'];
-    $ruta_destino = "subidas/".$nombre_archivo;
+    $ruta_destino = "C:\subidas\ ".$nombre_archivo;
 
     //validar y mover archivo
     if($error == UPLOAD_ERR_OK){
