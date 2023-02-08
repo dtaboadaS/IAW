@@ -13,3 +13,4 @@ foreach($nota as $x_value) {
 
 </body>
 </html>
+//Para introducir valor en un lugar concreto "$nota[]= 10;" lo que vaya entre los corchetes es la posición, incluido el 0.
