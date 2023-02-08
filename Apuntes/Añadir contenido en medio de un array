@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$nota = array(10, 5, 0);
+array_splice($nota, 2, 0, 8);
+
+foreach($nota as $x_value) {
+    echo "Nota: " . $x_value . "<br>";
+}
+?>
+
+</body>
+</html>
+
+//dentro del "array_splice" se introducen los valores en este orden: (variable, posición, contenido del array que sera substituido, valor1, valor2,...
