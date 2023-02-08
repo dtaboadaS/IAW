@@ -15,3 +15,4 @@ foreach($nota as $x_value) {
 </html>
 
 //dentro del "array_splice" se introducen los valores en este orden: (variable, posición, contenido del array que sera substituido, valor1, valor2,...
+//para varios valores "array_splice($nota, 1, 0, array(20, 8));"
