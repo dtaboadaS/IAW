@@ -17,3 +17,4 @@ foreach($age as $x => $x_value) {
 </html>
 
 // Si quisieramos ordenar por clave (Peter, Ben, Joe) utilizaremos ksort y krsort
+// Para mostrar -> print_r($variable);
