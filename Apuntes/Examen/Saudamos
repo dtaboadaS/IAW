@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>IAW. Exame. </title>
+</head>
+
+<body>
+
+<h1>Saudamos!</h1>
+
+<?php
+   $nome = "Jose";
+   $hora = date ("H");
+
+   if ($hora >= 8 && $hora < 14)
+      echo "Bos días, " .$nome;
+   else if ($hora >= 14 && $hora <= 21)
+      echo "Boas tardes, " .$nome;
+   else
+      echo "Boas noites, " .$nome;
+?>
+
+</body>
+</html>
