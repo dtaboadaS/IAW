@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Conversor de euros a pesetas</h1>
+<form action="conversor.php" method="post" enctype="multipart/form-data">
+  Cantidad en euros: <input value="" type="number" step="any" name="euros"> <br><br>
+  <input type="submit" value="Convertir">
+</form> 
+
+</body>
+</html>
