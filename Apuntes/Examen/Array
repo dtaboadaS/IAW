@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>IAW. Exame. </title>
+</head>
+
+<body>
+
+<h1>O meu array</h1>
+
+<?php
+
+$o_meu_array = array(3,8,3,8,3);
+
+function datos_array($array) {
+$total_elementos_do_array = count($array);
+$suma_elementos_do_array = array_sum($array);
+$media_elementos_do_array = $suma_elementos_do_array /$total_elementos_do_array ;
+
+echo "O array ten ". $total_elementos_do_array." elementos, que suman ". $suma_elementos_do_array . " e teñen de media ". $media_elementos_do_array ."<br>";
+
+}
+
+//1 Amosa todos os valores do array e o seu triple
+echo "<h1> Apartado 1 </h1>";
+
+foreach($o_meu_array as $valor){
+	echo $valor.", e o triple é :". $valor*3 . "<br/>";		
+}
+
+//2 Amosa o otal de valores, a súa suma ea media
+echo "<h1> Apartado 2 </h1>";
+
+datos_array($o_meu_array);
+
+//3 Elimina o último valor, e repite a operación
+
+echo "<h1> Apartado 3 </h1>";
+
+$ultimo_elemento_eliminado = array_pop($o_meu_array);  
+
+echo "Elemento eliminado: $ultimo_elemento_eliminado <br>";
+
+datos_array($o_meu_array);
+
+//4 Amosa todos os valores do array sen amosar valores repetidos
+
+echo "<h1> Apartado 4 </h1>";
+$o_meu_array = array_unique($o_meu_array);
+
+foreach($o_meu_array as $valor){
+	echo $valor."<br/>";		
+}
+
+?>
+
+
+
+
+</body>
+</html>
