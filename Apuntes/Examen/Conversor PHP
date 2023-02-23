@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<?php
+echo "<h1>Conversor de euros a pesetas</h1>";
+    $euros = $_POST['euros'];
+    echo $euros. " euro(s) equivale(n) a". ($euros*166.3860);
+?>
