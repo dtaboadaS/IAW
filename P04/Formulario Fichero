@@ -2,7 +2,7 @@
 <html>
 <body>
 <h1>PHP Formulario</h1>
-<form action="form_action.php" method="post">
+<form action="form_action.php" method="post" enctype="multipart/form-data">
   Nombre: <input type="text" name="name"><br><br>
   E-mail: <input type="email" name="email"><br><br>
   Web: <input type="url" name="website"><br><br>
@@ -12,7 +12,7 @@
   <input type="radio" name="gender" value="mujer"> Mujer
   <input type="radio" name="gender" value="otro"> Otro<br><br>
   <input type="file" id="file" name="file"><br><br>
-  <input type="submit" value="Enviar">
+  <input type="submit" name="submit" value="Enviar">
 </form> 
 
 </body>
