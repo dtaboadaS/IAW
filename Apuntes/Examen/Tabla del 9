@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<HEAD>
+   <title>IAW. Exame.</title>
+</HEAD>
+
+<body>
+
+<h1>Táboa de multiplicar</h1>
+
+<?PHP
+
+   $n = 9;
+   
+   echo ("<p>A táboa de multiplicar do $n:</p>");
+   
+   echo ("</p>Cunha estrutura de control </p>");
+   
+   echo ('<table border="1"><th>n1</th><th>n2</th><th>Resultado</th>');
+
+   for ($i=10; $i>=0; $i--)
+      echo ("<tr><td> $n </td> <td> $i </td> <td>". $n*$i . "</td></tr>");
+
+   echo ("</table>");
+   
+   echo ("</p>Con outra estrutura de control </p>");
+   
+   echo ('<table border="1"><th>n1</th><th>n2</th><th>Resultado</th>');
+   
+   $i=10;
+   while ($i>=0){
+      echo ("<tr><td> $n </td> <td> $i </td> <td>". $n*$i . "</td></tr>");
+	  $i=$i-1;
+   }
+   echo ("</table>");
+
+?>
+
+</body>
+</html>
