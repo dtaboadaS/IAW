@@ -1,0 +1,13 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<h1> Introduce los operandos</h1> 
+
+<form action="operando.php" method="post" enctype="multiform/form_action"/> 
+
+Introduce el primer operando: <input type="number" id="number" name="number"/>
+<br/> <br/>
+Introduce el segundo operando: <input type="number" id="number2" name="number2"/> 
+<br/> <br/> 
+<input type="submit" id="submit" name="submit"/> </body> </html>
