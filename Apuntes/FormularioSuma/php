@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Introduce los operandos</h1>
+<?php
+$number= $_POST["number"];
+$number2= $_POST["number2"];
+
+echo "el total es " . $number+$number2; 
+?>
+</body>
+</html>
