@@ -7,7 +7,7 @@
     <body>
 	<h1 class="center">Estado do rexistro dun novo profesor</h1>
 	<?php
-		include 'conector.php';
+		include '../bbdd/conector.php';
 		
 // Recoge los datos del formulario
 $Cod_Profesor = $_POST['Cod_Profesor'];
