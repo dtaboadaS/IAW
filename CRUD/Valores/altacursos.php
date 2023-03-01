@@ -2,14 +2,12 @@
 	<head>
         <title>Novo Curso</title>
     </head>
-    <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
-	
     <body>
 	<h1 class="center">Estado do rexistro dun novo curso</h1>
 	<?php
 		include '../bbdd/conector.php';
 
-		// Recollo os datos enviados a través do formulari 
+		// Recollo os datos enviados a través do formulario
 		  $Cod_Curso = $_POST["Cod_Curso"];
 		  $Inicio_Curso = $_POST["Inicio_Curso"];
 		  $Nombre = $_POST["Nombre"];
@@ -25,11 +23,7 @@
 	}
 	    
 	?>
-	<div class="center">
-	    <form action="altacurso.html">
-		<input type="submit" value="Volver al formulario" />
-	    </form>
-	</div>
+	<a href="altaalumnosform.html">Volver al Formulario</a><br><br>
 	<a href=".././centro.html">Volver al Inicio</a>
     </body>
 </html>
