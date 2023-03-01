@@ -2,7 +2,6 @@
 	<head>
         <title>Nova Materia</title>
     </head>
-    <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
 	
     <body>
 	<h1 class="center">Estado do rexistro dunha nova materia</h1>
@@ -25,11 +24,7 @@
 	}
 	    
 	?>
-	<div class="center">
-	    <form action="altamaterias.html">
-		<input type="submit" value="Volver al formulario" />
-	    </form>
-	</div>
+	<a href="altaalumnosform.html">Volver al Formulario</a><br><br>
 	<a href=".././centro.html">Volver al Inicio</a>
     </body>
 </html>
