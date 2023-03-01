@@ -1,56 +1,63 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
-"http://www.w3.org/TR/html4/loose.dtd">
-
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Universidade de Santiago de Compostela</title>
-	</head>
-	<body bgcolor="#959595"><a name="inicio"></a>
-		<table align="center" width="1700" border="1" cellpadding="10" bgcolor="white">
-			<tr>
-				<td bgcolor="#33A2FF" width="16"><a href="./bbdd/create_db_script.php"><center><font face="Verdana" color="white" size="3"><b>CREAR BASE DE DATOS</b></font></center></a>
-				</td>
-				<td bgcolor="#33A2FF" width="17"><a href="./bbdd/borrar_db_script.php"><center><font face="Verdana" color="white" size="3"><b>BORRAR BASE DE DATOS</b></font></center></a>
-				</td>
-				<td bgcolor="#33A2FF" width="17"><a href="./registrarse/altamaterias.html"><center><font face="Verdana" color="white" size="3"><b>ALTA MATERIAS</b></font></center></a>
-				</td>
-				<td bgcolor="#33A2FF" width="17"><a href="./registrarse/altacurso.html"><center><font face="Verdana" color="white" size="3"> <b>ALTA CURSOS</b></font></center></a>
-				</td>
-				<td bgcolor="#33A2FF" width="17"><a href="./registrarse/altaprofesores.html"><center><font face="Verdana" color="white" size="3"><b>ALTA PROFESORES</b></font></center></a>
-				</td>
-				<td bgcolor="#33A2FF" width="16"><a href="./registrarse/altaalumnosform.html"><center><font face="Verdana" color="white" size="3"><b>ALTA ALUMNOS</b></font></a></center>				</td>
-			</tr>
-			<tr>
-				<td colspan="4" bgcolor="white">
-					
-				</td>
-				<td colspan="2" bgcolor="#33A2FF">
-					</br>
-					<p align="left"><font face="Verdana"><b><h3>DATOS DO CENTRO</h3></b>
-					</br>
-					<hr align="center" width="95%"></hr>
-					</br>
-					Avenida Castelao, nº 64 - 15406 Ferrol (A Coru&ntilde;a)
-					</br>
-					</br>
-					<b>Tel. Central:</b> +34 881 930 145
-					</br>
-					</br>
-					<b>Tel. Oficina:</b> +34 881 930 146
-					</br>
-					</br>
-					<b>Fax:</b> +34 881 930 146
-					</br>
-					</br>
-					<b>E-mail:</b> <font color="#D44000">usc@edu.xunta.es</font>
-					</br>
-					</br>
-					<b>CIF:</b> Q6555702G
-					</br>
-					</br>
-					<b>Codigo de Centro:</b> 15006778</font></p>
-				</td>
-			</tr>
-		</table>
-	</body>
+<head>
+    <title>Universidad de Santiago de Compostela</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather" />
+    <link href="cssmenu/cssmenu.css" rel="stylesheet" />
+    <style>
+        body {
+            margin:0;
+            background:#959595;
+        }
+        #menuDemo { text-align:center; padding:30px 8px; }
+    </style>
+</head>
+<body>
+<div id="menuDemo">
+<!--start CssMenu-->
+<div id="cssmenu">
+    <ul>
+        <li>
+            <span>Base de Datos <i class="arrow"></i></span>
+            <ul class="dropdown">
+                <li><a href="bbdd/create_db_script.php">Crear Base de Datos</a></li>
+				<li><a href="bbdd/borrar_db_script.php">Borrar Base de Datos</a></li>
+            </ul>
+        </li>
+		<li>
+        <span>A&ntildeadir Datos <i class="arrow"></i></span>
+            <ul class="dropdown">
+                <li><a href="valores/altaalumnosform.html">A&ntildeadir Alumno</a></li>
+				<li><a href="valores/altaprofesores.html">A&ntildeadir Profesor</a></li>
+				<li><a href="valores/altamaterias.html">A&ntildeadir Materia</a></li>
+				<li><a href="valores/altacurso.html">A&ntildeadir Curso</a></li>
+            </ul>
+		</li>
+        <li>
+        <span>Modificar Datos <i class="arrow"></i></span>
+            <ul class="dropdown">
+                <li><a href="#">Modificar Alumno</a></li>
+				<li><a href="#">Modificar Profesor</a></li>
+				<li><a href="#">Modificar Materia</a></li>
+				<li><a href="#">Modificar Curso</a></li>
+            </ul>
+		</li>
+       <li>
+        <span>Eliminar Datos <i class="arrow"></i></span>
+            <ul class="dropdown">
+                <li><a href="#">Eliminar Alumno</a></li>
+				<li><a href="#">Eliminar Profesor</a></li>
+				<li><a href="#">Eliminar Materia</a></li>
+				<li><a href="#">Eliminar Curso</a></li>
+            </ul>
+		</li>
+    </ul>
+</div>
+<!--end CssMenu-->
+</div>
+<table align="center" width="1700" border="1" cellpadding="10" bgcolor="white">
+
+</table>
+</body>
 </html>
