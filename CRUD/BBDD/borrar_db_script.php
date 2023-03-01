@@ -26,5 +26,6 @@
 
 
 	?>
+		<a href=".././login.html">Volver al Login</a><br><br>
     </body>
 </html>
