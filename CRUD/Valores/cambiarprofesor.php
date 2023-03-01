@@ -39,6 +39,6 @@ mysqli_close($conexion);
 		<input type="submit" value="Volver al formulario" />
 	    </form>
 	</div>
-	<a href=".././centro.html">Volver al Inicio</a>
+	<a href=".././centro.html">Volver</a>
     </body>
 </html>
