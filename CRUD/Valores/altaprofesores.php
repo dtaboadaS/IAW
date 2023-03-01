@@ -2,8 +2,6 @@
   <head>
         <title>Novo Profesor</title>
     </head>
-    <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
-	
     <body>
 	<h1 class="center">Estado do rexistro dun novo profesor</h1>
 	<?php
@@ -28,11 +26,7 @@ if ($result = mysqli_query($conector, $insert_profesor)) {
 	    echo ("Non se puido rexistrar o alumno/a -> ". mysqli_error($conector))."<br><br>";
 	}
 ?>
-<div class="center">
-	    <form action="altaprofesores.html">
-		<input type="submit" value="Volver al formulario" />
-	    </form>
-	</div>
+	<a href="altaalumnosform.html">Volver al Formulario</a><br><br>
 	<a href=".././centro.html">Volver al Inicio</a>
     </body>
 </html>
