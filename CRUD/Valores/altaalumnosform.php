@@ -35,7 +35,7 @@
 	  <label for="name">Telefono :</label>
       <input type="text" id="Telefono" name="Telefono"><br><br>
 	  
-	  <input type="submit" value="Registrarse">
+	  <input type="submit" value="A&ntilde;adir datos">
 	  <input type="reset" value="Borrar">
     </form>
 	<br>
