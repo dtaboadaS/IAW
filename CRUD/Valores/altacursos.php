@@ -7,7 +7,7 @@
     <body>
 	<h1 class="center">Estado do rexistro dun novo curso</h1>
 	<?php
-		include 'conector.php';
+		include '../bbdd/conector.php';
 
 		// Recollo os datos enviados a través do formulari 
 		  $Cod_Curso = $_POST["Cod_Curso"];
