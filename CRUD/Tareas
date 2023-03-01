@@ -1,0 +1,16 @@
+1) Cambiar etiqueta <title> de todas las páginas para que concuerden con el contenido. 
+  - Las paginas de añadir contenido: Añadir alumno/profesor/curso/materia
+  - Las paginas de modificar contenido: Modificar alumno/profesor/curso/materia
+  - Las pagians de borrar contenido: Borrar alumno/profesor/curso/materia
+  
+2) En la pagina principal (centro.html) hacer que se muestren todos los datos de las tablas de la base de datos.
+
+3) Cambiar los botones de los formularios de Altas y Modificaciones (mas tarde tambien de Borrar) para que sean iguales que los del fichero login.html (o index.html 
+que es su nombre aqui en github).
+
+4) Crear un formulario para creación de tablas en la BBDD. Será muy parecido a los de alta o modificación, pero la consulta de MySQL en lugar de un INSERT o un
+UPDATE sera un CREATE TABLE IF NOT EXISTS con los diferentes campos (puede copiarse código del scrip de creación de la base de datos)
+
+5) Añadir botones de "Volver" donde sea necesario si no los hay ya creados.
+
+6) Modificar el apartado estético de las paginas en general añadiendo contenido.
