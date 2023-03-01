@@ -7,7 +7,7 @@
     <body>
 	<h1 class="center">Estado do rexistro dun novo alumno</h1>
 	<?php
-		include 'conector.php';
+		include '../bbdd/conector.php';
 
 		// Recollo os datos enviados a través do formulari 
 		  $Cod_Alumno = $_POST["Cod_Alumno"];
@@ -31,7 +31,7 @@
 	    
 	?>
 	<div class="center">
-	    <form action="altaalumnosform.php">
+	    <form action="altaalumnosform.html">
 		<input type="submit" value="Volver al formulario" />
 	    </form>
 	</div>
