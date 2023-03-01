@@ -2,10 +2,8 @@
 	<head>
         <title>Novo Alumno</title>
     </head>
-    <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
-	
     <body>
-	<h1 class="center">Estado do rexistro dun novo alumno</h1>
+	<h1 class="center">Estado del registro de un nuevo alumno</h1>
 	<?php
 		include '../bbdd/conector.php';
 
@@ -26,15 +24,11 @@
 	if ($result = mysqli_query($conector, $insert_alumno)) {
 	    echo "<h3 class='center'>Alumno " . $Nombre ." creado correctamente."."<br></h3>";		    
 	} else {
-	    echo ("Non se puido rexistrar o alumno/a -> ". mysqli_error($conector))."<br><br>";
+	    echo ("No se pudo registrar al alumno/a -> ". mysqli_error($conector))."<br><br>";
 	}
 	    
 	?>
-	<div class="center">
-	    <form action="altaalumnosform.html">
-		<input type="submit" value="Volver al formulario" />
-	    </form>
-	</div>
+	<a href="altaalumnosform.html">Volver al Formulario</a><br><br>
 	<a href=".././centro.html">Volver al Inicio</a>
     </body>
 </html>
