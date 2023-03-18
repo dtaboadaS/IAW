@@ -1,0 +1,20 @@
+<?php
+/*
+Plugin Name: Cambiar color de fondo
+Plugin URI: https://wordpressprueba.com/plugins/
+Description: Este plugin cambia el color de fondo de tu sitio web
+Version: 1.0
+Author: Daniel Taboada Calvo
+Author URI: https://wordpressprueba.com/
+License: GPL2
+*/
+
+
+function cambiar_color_fondo_aleatorio() {
+    $colores = array("#ffc6d9", "#d7bde2", "#aed6f1", "#abebc6", "#f9e79f", "#f5cbaq7", "#d2d7d3");>
+    $color_aleatorio = $colores[array_rand($colores)]; // Escoge un color aleatorio de la lista
+    echo '<style>body { background-color: '.$color_aleatorio.'; }</style>';
+}
+
+add_action('wp_head', 'cambiar_color_fondo_aleatorio');
+?>
